@@ -1,0 +1,157 @@
+{
+  "settings": {
+    "name": "Blockdag",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/blockdag-logo.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://blockdag-v4.github.io/sitemap.xml\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://blockdag-v4.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "tzsig4szeq",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "5.9.13",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "BlockDAG™ | LAST CHANCE to BUY BDAG - PRESALE FINISHING!",
+        "meta_descr": "BlockDag is a decentralized distributed ledger technology that integrates the security of traditional blockchains with the efficiency and scalability of Directed Acyclic Graphs (DAGs).",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/blockdag-new.png\" alt=\"Blockdag\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-2",
+          "_isUserblock": true,
+          "_cid": "uTJOVX7P6G",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>BlockDAG Networks: A New Frontier in Blockchain Technology</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  As blockchain technology continues to evolve, new architectures are emerging to address the limitations of traditional blockchain systems. One of the most promising innovations is the BlockDAG (Directed Acyclic Graph) network, which offers a unique approach to data storage and transaction processing. This article explores the fundamentals of BlockDAG networks, their key features, benefits, challenges, and potential applications, as well as their implications for the future of decentralized systems.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is BlockDAG?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Overview</b><br>A <a href=\"https://blockdag-v4.github.io/\" class=\"text-primary\"><b>BlockDAG</b></a> network is a data structure that allows multiple blocks to be added simultaneously in a non-linear fashion, rather than in a single chain like traditional blockchains. In this architecture, each block can reference multiple previous blocks, creating a directed acyclic graph. This structure enhances scalability, improves transaction speed, and reduces the risk of network congestion.<br><br><b>Key Characteristics</b><br>Non-Linear Structure: Unlike traditional blockchains that rely on a linear sequence of blocks, BlockDAG allows blocks to be added in parallel, leading to a more flexible and scalable system.<br><br>Multiple Confirmations: In a BlockDAG, transactions can be confirmed by multiple blocks, which can enhance security and reduce the time it takes for transactions to be validated.<br><br>High Throughput: The parallel processing of transactions in a <a href=\"https://purchase3.blockdag.network/\" class=\"text-primary\"><b>BlockDAG</b></a> network enables higher transaction throughput, making it suitable for applications that require rapid processing.<br><br>Reduced Fees: With increased efficiency and scalability, BlockDAG networks can potentially lower transaction fees, making them more accessible for users.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How BlockDAG Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Structure and Functionality</b><br>In a BlockDAG network, blocks are connected through directed edges that represent the relationships between them. Each block contains a set of transactions and references one or more previous blocks. This structure allows for multiple paths of confirmation, where a new block can confirm the validity of previous transactions.<br><br>Block Creation: When a user initiates a transaction, it is bundled into a new block. This block can reference multiple prior blocks, allowing it to be added to the DAG structure without waiting for a single chain confirmation.<br><br>Transaction Validation: Nodes in the network validate transactions by checking the references to previous blocks. If the referenced blocks are valid and have been confirmed by other nodes, the new block is accepted into the network.<br><br>Consensus Mechanism: BlockDAG networks often utilize unique consensus mechanisms, such as Proof of Work (PoW), Proof of Stake (PoS), or variations tailored to the DAG structure. These mechanisms ensure that the network reaches agreement on the validity of transactions and blocks.<br><br><b>Example of BlockDAG Networks</b><br>Several projects have implemented BlockDAG architectures, each with its own unique features:<br><br>IOTA: One of the first and most well-known BlockDAG networks, IOTA uses a structure called the Tangle, which allows transactions to be confirmed by other transactions. This enables feeless microtransactions and enhances scalability.<br><br>Nano: Nano employs a BlockDAG architecture to facilitate fast, fee-less transactions. Each account has its own blockchain, allowing for quick updates and confirmations.<br><br>Hedera Hashgraph: While not a traditional BlockDAG, Hedera utilizes a directed acyclic graph structure to achieve high throughput and low latency, making it suitable for enterprise applications.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of BlockDAG Networks</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Scalability</b><br>BlockDAG networks can handle a significantly higher number of transactions per second compared to traditional blockchains. The ability to process multiple blocks simultaneously reduces the risk of network congestion and allows for greater scalability as user demand increases.<br><br><b>2. Speed</b><br>With parallel transaction processing, BlockDAG networks can achieve faster confirmation times. Users can experience near-instant transaction speeds, making these networks suitable for real-time applications.<br><br><b>3. Reduced Costs</b><br>Lower transaction fees are a major advantage of BlockDAG networks. By eliminating the need for miners to compete for block rewards in a linear fashion, the cost of processing transactions can be significantly reduced.<br><br><b>4. Enhanced Security</b><br>The multiple confirmations provided by a BlockDAG structure can enhance security by reducing the risk of double spending and improving the overall integrity of the network. Transactions are validated by several nodes, making it harder for malicious actors to compromise the system.<br><br><b>5. Flexibility</b><br>BlockDAG networks offer greater flexibility in terms of transaction types and applications. The ability to process multiple transactions simultaneously allows for innovative use cases, such as IoT applications, microtransactions, and more complex smart contracts.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges of BlockDAG Networks</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Complexity</b><br>The architecture of BlockDAG networks can be more complex than traditional blockchains, making it challenging for developers to implement and maintain. Understanding the nuances of a DAG structure requires a different approach to programming and network design.<br><br><b>2. Consensus Mechanisms</b><br>The development of effective consensus mechanisms tailored to BlockDAG structures is still an area of ongoing research. Achieving consensus in a decentralized, non-linear environment presents unique challenges that need to be addressed to ensure network stability and security.<br><br><b>3. Network Effects</b><br>BlockDAG networks may struggle to achieve the same level of network effects as established blockchains like Bitcoin or Ethereum. Building a sufficient user base and attracting developers to create applications can be a hurdle for newer projects.<br><br><b>4. Regulatory Uncertainty</b><br>As with all blockchain technologies, BlockDAG networks face regulatory challenges. The evolving legal landscape surrounding cryptocurrencies and decentralized technologies can impact the development and adoption of these networks.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases for BlockDAG Networks</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Internet of Things (IoT)</b><br>BlockDAG networks are well-suited for IoT applications, where devices generate vast amounts of data and require fast, cost-effective transactions. The ability to process multiple transactions in parallel can facilitate real-time communication and transactions between devices.<br><br><b>2. Microtransactions</b><br>With low transaction fees and fast confirmation times, BlockDAG networks are ideal for microtransactions. This opens up new business models, such as pay-per-use services, tipping, and content monetization.<br><br><b>3. Supply Chain Management</b><br>The transparency and security provided by BlockDAG networks can enhance supply chain management. Real-time tracking of products and transactions can improve efficiency and reduce fraud.<br><br><b>4. Decentralized Finance (DeFi)</b><br>BlockDAG networks can support various DeFi applications, including lending, borrowing, and trading. Their scalability and low fees make them attractive for users looking to engage with decentralized financial services.<br><br><b>5. Gaming and Digital Content</b><br>The gaming industry can benefit from the rapid transaction speeds and low costs of BlockDAG networks. In-game assets and currencies can be traded seamlessly, creating new economic opportunities for players and developers.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of BlockDAG Networks</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Increased Adoption</b><br>As the demand for scalable and efficient blockchain solutions grows, BlockDAG networks are likely to see increased adoption across various industries. Their ability to handle high transaction volumes and provide low-cost solutions positions them well for future growth.<br><br><b>2. Enhanced Interoperability</b><br>Future developments in BlockDAG technology may focus on enhancing interoperability between different BlockDAG networks and traditional blockchains. This could lead to a more interconnected blockchain ecosystem, allowing for greater collaboration and innovation.<br><br><b>3. Advanced Security Features</b><br>As cybersecurity threats evolve, BlockDAG networks will need to implement advanced security features to protect user data and assets. Ongoing research and development in this area will be crucial for maintaining trust and integrity within these systems.<br><br><b>4. Regulatory Clarity</b><br>As regulatory frameworks surrounding cryptocurrencies and blockchain technologies become clearer, BlockDAG networks may benefit from increased legitimacy and acceptance. This could drive further investment and innovation in the space.<br><br><b>5. Community Development</b><br>The success of BlockDAG networks will depend on strong community engagement and developer support. Building vibrant communities around these technologies will be essential for fostering innovation and ensuring long-term sustainability.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">BlockDAG networks represent a significant advancement in blockchain technology, offering unique solutions to the challenges faced by traditional blockchain systems. With their scalability, speed, and flexibility, BlockDAG networks have the potential to reshape various industries and drive the adoption of decentralized technologies.<br><br>As the blockchain landscape continues to evolve, the development and implementation of BlockDAG networks will play a crucial role in shaping the future of finance, IoT, gaming, and more. By addressing the limitations of existing systems and offering innovative solutions, BlockDAG networks are poised to become a foundational element of the decentralized future.<br><br>In a world where efficiency, security, and accessibility are paramount, BlockDAG technology stands out as a beacon of innovation, paving the way for a more connected and decentralized ecosystem. Embracing this technology could unlock new possibilities and drive the next wave of digital transformation.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uTJsOwr0iO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
